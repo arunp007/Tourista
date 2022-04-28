@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+            background: url("https://images.unsplash.com/photo-1649659583857-d58c189fcc59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+ 
+
+        .container{
+            background-color: white;
+            width: 50%;
+            height: 900px;
+            border-radius: 30px;
+            margin: 100px 200px 200px 200px;
+        }
+
+
+        .container2{
+            background-color: rgba(150, 150, 150, 0.5);
+            width: 70%;
+            padding: 10px 10px;
+            margin: 8px 0;
+            border: 1px solid white;
+            border-radius: 4px;
+        } 
+
+
+        h1{
+            color: darkblue; 
+            text-align: center;
+            text-decoration: solid;
+            font-size: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        .button{
+            color: white;
+            background-color: dodgerblue;
+            width: 70%;
+            padding: 11px 15px;
+            margin: 8px 0;
+            border: 1px solid white;
+            border-radius: 4px;
+        }
+
+        input[type=button]:hover {
+            background-color: green;
+
+        }
+
+        input[type=reset]:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <form action="" method="get">
+            <br>
+         <h1>SIGN UP</h1>
+          <center>
+          <input type="text" class="container2" placeholder="Username" id="username"><br>
+            <label id="user_error"></label><br>
+          <input type="text" class="container2" placeholder="Email" id="emailid"><br>
+            <label id="email_error"></label><br>
+          <input type="password" class="container2" placeholder="Password" id="password"><br>
+            <label id="password_error"></label><br>
+          <input type="password" class="container2" placeholder="Confirm Password" id="confirmpass"><br>
+            <label id="cpass_error"></label><br>
+          <input type="number" class="container2" placeholder="Age" id="age"><br>
+            <label id="age_error"></label><br>
+          <input type="text" class="container2" placeholder="Date Of Birth" id="birthdate"><br>
+            <label id="birth_error"></label><br>
+          <select name="State" id="state" class="container2">
+             <option value="1">State</option>
+            <option value="1">Kerala</option>
+            <option value="2">Tamil Nadu</option>
+            <option value="3">Karnataka</option>
+          </select><br><br><br>
+          <input class="button" type="button" value="SIGNUP" onclick="validation()"><br><br><br><br><br>
+     </center>  
+     </form>
+     </div>
+    </center>
+    <script>
+      function validation(){
+          user = document.getElementById('username')
+          email = document.getElementById('emailid')
+          pass = document.getElementById('password')
+          cpass = document.getElementById('confirmpass')
+          age = document.getElementById('age')
+          birth = document.getElementById('birthdate')
+          state = document.getElementById('state')
+  
+          if(user.value == ""){
+            document.getElementById('username').style.borderColor="red"
+            document.getElementById('user_error').innerHTML="*** Please Enter Your Username ***"
+            document.getElementById('user_error').style.color="red"
+            document.getElementById('user_error').style.display="block"
+          }
+  
+          else{
+            document.getElementById('username').style.borderColor="black"
+            document.getElementById('user_error').style.display="none"
+          }
+  
+          if(email.value == ""){
+            document.getElementById('emailid').style.borderColor="red"
+            document.getElementById('email_error').innerHTML="*** Please Enter Your Email Id ***"
+            document.getElementById('email_error').style.color="red"
+            document.getElementById('email_error').style.display="block"
+          }
+  
+          else{
+            document.getElementById('emailid').style.borderColor="black"
+            document.getElementById('email_error').style.display="none"
+          }
+ 
+          if(pass.value == ""){
+            document.getElementById('password').style.borderColor="red"
+            document.getElementById('password_error').innerHTML="*** Please Enter Your Password ***"
+            document.getElementById('password_error').style.color="red"
+            document.getElementById('password_error').style.display="block"
+          }
+  
+          else{
+            document.getElementById('password').style.borderColor="black"
+            document.getElementById('password_error').style.display="none"
+          }
+  
+          if(cpass.value == ""){
+            document.getElementById('confirmpass').style.borderColor="red"
+            document.getElementById('cpass_error').innerHTML="*** Please Enter Your Confirm Password ***"
+            document.getElementById('cpass_error').style.color="red"
+            document.getElementById('cpass_error').style.display="block"
+          }
+  
+          else{
+            document.getElementById('confirmpass').style.borderColor="black"
+            document.getElementById('cpass_error').style.display="none"
+          }
+  
+          if(age.value == ""){
+            document.getElementById('age').style.borderColor="red"
+            document.getElementById('age_error').innerHTML="*** Please Enter Your Age ***"
+            document.getElementById('age_error').style.color="red"
+            document.getElementById('age_error').style.display="block"
+          }
+  
+          else{
+            document.getElementById('age').style.borderColor="black"
+            document.getElementById('age_error').style.display="none"
+          }
+  
+          if(birth.value == ""){
+            document.getElementById('birthdate').style.borderColor="red"
+            document.getElementById('birth_error').innerHTML="*** Please Enter Your Date Of Birth ***"
+            document.getElementById('birth_error').style.color="red"
+            document.getElementById('birth_error').style.display="block"
+          }
+  
+          else{
+            document.getElementById('birtherror').style.borderColor="black"
+            document.getElementById('birth_error').style.display="none"
+          }
+
+        }
+    </script>
+</body>
+</html>

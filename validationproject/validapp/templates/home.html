@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+     .navbar{
+         background-color: cadetblue;
+         padding-top: 20px;
+         padding-left: 20px;
+         padding-bottom: 20px;
+     }
+
+    .head{
+        color: red;
+        font-size: 50px;
+        font-weight: bolder;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 30px;
+        color: white;
+    }
+
+    a:hover{
+        color: chartreuse;
+    }
+
+    .image{
+        width: 90%;
+        height: 700px;
+        border-radius: 50px;
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+
+    .container{
+        background-color: white;
+        color: white;
+        font-size: 40px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .container:hover{
+        background: linear-gradient(#42275a,#734b6d);
+        color: white;
+        position: relative;
+    }
+
+    .container1{
+        display: grid;
+        grid-template-columns: 350px 350px 350px 350px;
+        grid-template-rows: 450px 450px 450px 450px;
+        grid-area: 100px;
+        grid-gap: 30px;
+    }
+
+    .grid1{
+        background-color: burlywood;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container5{
+        display: grid;
+        grid-template-columns: 600px 400px;
+        grid-template-rows: 600px 400px;
+        grid-area: 100px;
+        grid-gap: 30px;
+        width: 100%;
+        height: 600px;
+        background-color: palevioletred;
+    }
+
+    .container3{
+        background-color: aqua;
+        width:400px;
+        height:400px;
+        margin-top: 50px;
+        margin-left: 200px;
+        border-radius: 400px;
+    }
+
+    .container3:hover{
+        background-color: black;
+        color: white;
+    }
+
+    .container6{
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: 400px 400px 400px;
+        grid-area: 100px;
+        grid-gap: 30px;
+        width: 100%;
+        height: 600px;
+        margin-left: 100px;
+    }
+
+    .content1{
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+
+    }
+    
+    .content2{
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .content3{
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    label{
+        padding-left: 20px;
+        font-size: 30px;   
+    }
+
+    .top{
+        position: fixed;
+        top: 70%;
+        transform: translateY(-70%);
+        margin-left: 1300px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="navbar" id="home">
+            <label class="head">Tour<span style="color: aliceblue;">ista</span></label><img src="https://i.ibb.co/QPPdDyX/tourista.png" width="150px">
+                <a href="#home">Home</a>
+                <a href="#offers">Tour Packages</a>
+                <a href="#about">About Us</a>
+                <a href="#reviews">Reviews</a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <img class="image" src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80">
+           <center><h1>Welcome To Tourista</h1>
+            <h3>Let's Explore The World</h3></center>   
+        </div>
+    </div>
+    
+
+    <div class="container-fluid">
+        <center><h1 style="font-size: 100px; color: darkblue" id="offers">Best Offers</h1>
+        <p style="font-size: 30px; font-weight: bolder; color: salmon;">Check Our Top Rated Tour Packages</p></center>
+        <div class="container1">
+              <div class="grid1">
+                 <img src="https://images.pexels.com/photos/1796715/pexels-photo-1796715.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                 <h3>UNITED KINGDOM</h3><h4>$5,000</h4>
+              </div>
+            
+              <div class="grid1">
+                 <img src="https://images.pexels.com/photos/3290070/pexels-photo-3290070.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                 <h3>SPAIN</h3><h4>$4,000</h4>
+              </div>
+              
+             <div class="grid1">
+                <img src="https://images.pexels.com/photos/2042109/pexels-photo-2042109.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>TURKEY</h3><h4>$2,000</h4>
+              </div>
+               
+               <div class="grid1">
+                <img src="https://images.pexels.com/photos/417344/pexels-photo-417344.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>ITALY</h3><h4>$3,000</h4>
+              </div>
+              
+               <div class="grid1">
+                <img src="https://images.pexels.com/photos/2758567/pexels-photo-2758567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="310px" height="310px">
+                <h3>JAPAN</h3><h4>$4,000</h4>
+              </div>
+              
+               <div class="grid1">
+                <img src="https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>INDIA</h3><h4>$4,000</h4>
+              </div>
+              
+              <div class="grid1">
+                <img src="https://images.pexels.com/photos/290386/pexels-photo-290386.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>UNITED STATES</h3><h4>$6,000</h4>
+              </div>
+              
+               <div class="grid1">
+                <img src="https://images.pexels.com/photos/158398/niagara-falls-waterfall-horseshoe-158398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="310px" height="310px">
+                <h3>CANADA</h3><h4>$5,000</h4>
+              </div>
+              
+              <div class="grid1">
+                <img src="https://images.pexels.com/photos/8284349/pexels-photo-8284349.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>RUSSIA</h3><h4>$4,000</h4>
+              </div>
+              
+               <div class="grid1">
+                <img src="https://images.pexels.com/photos/3185480/pexels-photo-3185480.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>EGYPT</h3><h4>$4,000</h4>
+              </div>
+              
+              <div class="grid1">
+                <img src="https://images.pexels.com/photos/3799176/pexels-photo-3799176.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>IRAN</h3><h4>$3,000</h4>
+              </div>
+              
+             <div class="grid1">
+                <img src="https://images.pexels.com/photos/1128416/pexels-photo-1128416.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>GERMANY</h3><h4>$5,000</h4>
+              </div>
+              
+              <div class="grid1">
+                <img src="https://images.pexels.com/photos/6580703/pexels-photo-6580703.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>BRAZIL</h3><h4>$4,000</h4>
+              </div>
+              
+              <div class="grid1">
+                <img src="https://images.pexels.com/photos/3193767/pexels-photo-3193767.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>ARGENTINA</h3><h4>$4,000</h4>
+              </div>
+              
+             <div class="grid1">
+                <img src="https://images.pexels.com/photos/513799/pexels-photo-513799.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>AUSTRALIA</h3><h4>$5,000</h4>
+              </div>
+              
+               <div class="grid1">
+                <img src="https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>FRANCE</h3><h4>$6,000</h4>
+              </div>
+              
+              <div class="grid1">
+                <img src="https://images.pexels.com/photos/10967302/pexels-photo-10967302.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>FINLAND</h3><h4>$5,500</h4>
+              </div>
+              
+             <div class="grid1">
+                <img src="https://images.pexels.com/photos/2692254/pexels-photo-2692254.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>POLAND</h3><h4>$5,000</h4>
+              </div>
+              
+              
+             <div class="grid1">
+                <img src="https://images.pexels.com/photos/4577147/pexels-photo-4577147.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>AFRICA</h3><h4>$6,000</h4>
+              </div>
+              
+              <div class="grid1">
+                <img src="https://images.pexels.com/photos/1534560/pexels-photo-1534560.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="310px" height="310px">
+                <h3>PORTUGAL</h3><h4>$5,000</h4>
+              </div>
+            </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container5">
+            <div class="container2">
+                <h1 style="color: darkblue; font-size: 50px; font-weight: bolder; padding-left: 100px;" id="about">About Us</h1>
+                <p style="padding-left: 20px; font-size: larger; color: white;">We Are The Best Travel Agency In The World. Our Tour Packages And Budget Friendly Plans Make Us Different From Other. We Build A Place For Us With Our Service And Hospitality And Guidence. All Of Our Customers Are Satisfied With Our Tour Packages.</p>
+                <img src="https://i.ibb.co/tPmnGCZ/125-1254954-contact-us-png-images-for-website.png" width="150px" style="padding-left: 100px; padding-top: 50px;">
+                <h1 style="padding-left: 20px; color:black;"><img src="https://i.ibb.co/LR7JNzK/gmail.png" width="50px"> touristagencey8848@gmail.com</h1>
+            
+            </div>
+            <div class="container3">
+                <img src="https://i.ibb.co/QPPdDyX/tourista.png" width="250px" style="margin-top: 50px;margin-left: 80px;">
+                <h1 style="margin-left: 150px; font-weight: bolder;">Tourista</h1>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container-fluid" style="background-color: white;">
+        <center><h1 style="font-size: 100px; color: darkblue;" id="reviews">Reviews</h1>
+        <p style="font-size: 30px; color: salmon;">What Our Customers Say About Us</p></center>
+        <div class="container6">
+            <div class="content1">
+                <img src="https://freepngimg.com/thumb/daniel_craig/166145-craig-daniel-png-download-free.png" width="150px" style="border-radius: 100px; margin-left:50px;">
+                <p>Its Was A Great Traveling Experience With Tourista. Iam Very Happy With My Tours With Tourista Team. I Suggest You All For A Best Traveling Experience Contact Travelist Tour Packages.</p> 
+                <h1 style="color: blue;">DANIEL CRAIG</h1>
+            </div>
+            <div class="content2">
+                <img src="https://www.pngall.com/wp-content/uploads/4/Jason-Statham-PNG-Pic.png" width="150px" style="border-radius: 100px; background-color: black; padding-top:20px; padding-bottom: 20px; margin-bottom: 5px; margin-left:50px;">
+                <p>Its Was A Great Traveling Experience With Tourista. Iam Very Happy With My Tours With Tourista Team. I Suggest You All For A Best Traveling Experience Contact Travelist Tour Packages.</p> 
+                <h1 style="color: blue;">JASON STATHAM</h1>
+            </div>
+            <div class="content3">
+                <img src="https://www.pngall.com/wp-content/uploads/4/Arnold-Schwarzenegger-Bodybuilding-PNG-Image.png" width="150px" style="border-radius: 100px; background-color: black; padding-top:23px; padding-bottom: 23px; margin-bottom: 6px; margin-left:50px;">
+                <p>Its Was A Great Traveling Experience With Tourista. Iam Very Happy With My Tours With Tourista Team. I Suggest You All For A Best Traveling Experience Contact Travelist Tour Packages.</p> 
+                <h1 style="color: blue;">ARNOLD</h1>
+            </div>
+        </div>
+    </div>
+    <div class="top">
+        <a href="#top"><img src="https://i.ibb.co/qpGT425/top.png" width="90px"></a>
+    </div>
+     <div class="container-fluid" style="background-color: black; color: white; width: 100%; height: 100px;">
+        <center><label></label><label></label><label></label></center>
+        <center><label>All Right Reserved</label><label>|</label><label>Developed By : Arun Pacheeri</label></center>
+     </div>  
+    
+    
+</body>
+</html>
